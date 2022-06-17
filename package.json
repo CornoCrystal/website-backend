@@ -1,0 +1,23 @@
+{
+  "name": "website-backend",
+  "version": "1.0.0",
+  "description": "Backend do site do Corno Crystal",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cornocrystal/website-backend.git"
+  },
+  "author": "maizenalegal",
+  "license": "GNU General Public License v3.0",
+  "bugs": {
+    "url": "https://github.com/cornocrystal/website-backend/issues"
+  },
+  "homepage": "https://github.com/cornocrystal/website-backend#readme",
+  "dependencies": {
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1"
+  }
+}
