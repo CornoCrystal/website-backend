@@ -12,7 +12,7 @@ const port = 8000;
 const requestListener = function (req, res) {
     res.setHeader("Content-Type", "application/json");
     res.writeHead(200);
-    const channel = client.channels.fetch('785945260450512926').then(channel => {
+    const channel = client.channels.fetch(channelID).then(channel => {
         channel.messages.fetch({ limit: 100 }).then((messages) => {
             res.write("[");
             messages.forEach(message => {
