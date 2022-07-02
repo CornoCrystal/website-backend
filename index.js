@@ -39,6 +39,7 @@ app.get('/changelog', (req, res) => {
                     .replace(/\n/g, "<br>")
                     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
                     .replace(/<br>-<br>/g, "<br>")
+                    .replace(/"/g, "\"")
                     .replace(/@everyone/g, "<strong>@everyone</strong>")
                     .replace(/@here/g, "<strong>@here</strong>")
                     .replace(/<@\d+>/g, (mention) => {
